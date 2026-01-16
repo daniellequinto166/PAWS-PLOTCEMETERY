@@ -30,9 +30,7 @@ public class loginForm extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        u_pass = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        u_name1 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         login = new javax.swing.JLabel();
@@ -40,6 +38,8 @@ public class loginForm extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        u_pass = new javax.swing.JPasswordField();
+        u_uname = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -58,29 +58,10 @@ public class loginForm extends javax.swing.JFrame {
         jLabel1.setText("LOG IN");
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, -1, -1));
 
-        u_pass.setEditable(false);
-        u_pass.setForeground(new java.awt.Color(102, 51, 0));
-        u_pass.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                u_passActionPerformed(evt);
-            }
-        });
-        jPanel3.add(u_pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 330, 380, 60));
-
         jLabel2.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(102, 51, 0));
         jLabel2.setText("Password:");
         jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 310, -1, -1));
-
-        u_name1.setEditable(false);
-        u_name1.setBackground(new java.awt.Color(255, 255, 255));
-        u_name1.setForeground(new java.awt.Color(102, 51, 0));
-        u_name1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                u_name1ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(u_name1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, 380, 60));
 
         jLabel3.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 51, 0));
@@ -139,6 +120,8 @@ public class loginForm extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Trebuchet MS", 2, 16)); // NOI18N
         jLabel4.setText("Forever in Our Hearts, Forever in Our Care.");
         jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, -1, -1));
+        jPanel3.add(u_pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 330, 380, 60));
+        jPanel3.add(u_uname, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, 380, 60));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, 550, 620));
 
@@ -155,14 +138,6 @@ public class loginForm extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void u_passActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_u_passActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_u_passActionPerformed
-
-    private void u_name1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_u_name1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_u_name1ActionPerformed
 
     private void u_registrationMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_u_registrationMouseClicked
     registerForm rf = new registerForm(); 
@@ -227,8 +202,8 @@ public class loginForm extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JLabel login;
-    private javax.swing.JTextField u_name1;
-    private javax.swing.JTextField u_pass;
+    private javax.swing.JPasswordField u_pass;
     private javax.swing.JLabel u_registration;
+    private javax.swing.JTextField u_uname;
     // End of variables declaration//GEN-END:variables
 }
